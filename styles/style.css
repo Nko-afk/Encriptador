@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    background: #D9D9D9;
+    font-family: var(--fuente-montserrat), sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.inf{
+    background-image: url(/assets/linkedin.png);
+}
+
+.Logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    justify-content: center ;
+    margin-top: -120px; /* Mueve el div hacia arriba */
+}
+
+.text-area{
+    border:none; 
+    color:#0A3871;
+    margin-top: 120px;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    color:#0A3871
+}
+
+.text-area:focus{outline:none}
+
+.resultado-txt {
+    background: #797978c1;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    padding: 20px;
+    padding-bottom: 70px; /* Ajuste el espacio para el botón */
+    width: 100%;
+}
+
+
+.resultado-txt:focus{
+    outline:none;
+}
+
+.resultado-txt-container {
+    position: relative;
+    width: fit-content;
+    margin-top: 80px; /* Mueve el div 20px hacia arriba */
+    margin-right: -50px;
+}
+
+.botones{
+    display: flex;
+    margin-top: -30px;
+    margin-left: -20px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: White;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-desencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+}
+
+.copiar {
+    position: absolute;
+    bottom: 21px; /* Ajuste para posicionar el botón dentro del textarea */
+    right: 85px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: white;
+    color: #0A3871;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+.informacion{
+    font-size: 18px;
+    color:#272727;
+    margin-top: -20px; /* Mueve el div 20px hacia arriba */
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .resultado-txt {
+        margin-left: 0;
+    }
+}
